@@ -31,15 +31,11 @@ The project was completed in the following five steps:
 
 ![workflow](https://github.com/Nicole-Hong/Flight_Distance_Calculation_with_MapReduce/blob/main/images/workflow.JPG)
 
-### System Requirements
-
-This project has been developed using Python and Jupyter Notebook, which are run on a Windows O/S and Visual Studio Code. 
-
 ### Data Requirements
 
 The mapper program was developed, based on the input dataset in a text file with over 10,000 JSON objects. The reducer program was developed from the sorted output file from the mapper program, which was also in a text file with JSON objects.
 
-The details of the input dataset were as follows:
+The detail of the input dataset was as follows:
 
 ![dataset](https://github.com/Nicole-Hong/Flight_Distance_Calculation_with_MapReduce/blob/main/images/dataset.JPG)
 
