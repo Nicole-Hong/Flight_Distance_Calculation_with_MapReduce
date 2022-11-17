@@ -45,6 +45,7 @@ Our team used the following Haversine formula to calculate the distances between
 ![formula](https://github.com/Nicole-Hong/Flight_Distance_Calculation_with_MapReduce/blob/main/images/haversine.JPG)
 
 The Haversine formula was broken down to three sections and implemented into the reducer program for calculating the distances as follows:
+
 ![haversine_details](https://github.com/Nicole-Hong/Flight_Distance_Calculation_with_MapReduce/blob/main/images/haversine_details.JPG)
 
 ### Key Outputs
