@@ -2,7 +2,7 @@
 
 # Flight Distance Calculation with Map Reduce
 
-This project is based on the Team Project from __YCBS 257 Data at Scale class__ at __Professional Development Certificate Program in Data Science and Machine Learning__ at __McGill University__ that introduced the Map Reduce functions for Big Data. 
+This project is completed as the Team Project at __YCBS 257 Data at Scale class__ in __Professional Development Certificate Program in Data Science and Machine Learning__ at __McGill University__, and the project introduced the Map Reduce functions for solving the problems with Big Data. 
 
 Based on 
 
