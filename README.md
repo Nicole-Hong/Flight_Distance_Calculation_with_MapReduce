@@ -26,8 +26,8 @@ For developing the base model, there were five separate procedures for the proje
 * __Review Input Dataset:__
 * __Build Mapper:__ 
 * __Build Reducer:__
-*__Create CSV List:__
-*__Data Analysis:__
+* __Create CSV List:__
+* __Data Analysis:__
 
 ![workflow](https://github.com/Nicole-Hong/Flight_Distance_Calculation_with_MapReduce/blob/main/images/workflow.JPG)
 
