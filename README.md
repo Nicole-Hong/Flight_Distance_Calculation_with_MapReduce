@@ -44,7 +44,7 @@ The base model was developed, based on text files with 10,000 JSON objects
 Our team used the following Haversine formula to calculate the distances between Beijing and data points in the given dataset, which were in latitudes and longitudes:
 ![formula](https://github.com/Nicole-Hong/Flight_Distance_Calculation_with_MapReduce/blob/main/images/haversine.JPG)
 
-We broken down the Haversine formula into three sections and implemented them into the reducer program for calculating the distances as follows:
+The Haversine formula was broken down to three sections and implemented into the reducer program for calculating the distances as follows:
 ![haversine_details](https://github.com/Nicole-Hong/Flight_Distance_Calculation_with_MapReduce/blob/main/images/haversine_details.JPG)
 
 ### Key Outputs
