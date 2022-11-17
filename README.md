@@ -22,7 +22,7 @@ This repository has the following main directories and files:
 
 ### Workflow Overview
 
-For developing the base model, there were five separate procedures for the project workflow as follows:
+The project was completed in the following five steps:
 * __Review Input Dataset:__
 * __Build Mapper:__ 
 * __Build Reducer:__
