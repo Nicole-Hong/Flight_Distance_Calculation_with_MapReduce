@@ -21,21 +21,21 @@ This repository has the following main directories and files:
 ### Workflow Overview
 
 The project was completed in the following five steps:
-* __Review Input Dataset:__
-* __Build Mapper:__ 
-* __Build Reducer:__
-* __Create CSV List:__
-* __Data Analysis:__
+* __Input Dataset:__ Verify and review the input dataset (i.e. data type, format and structure before processing)
+* __Build Mapper:__ Write a mapper program which takes out all flights ids that have the position messages only, the clock, ident and latitude and longitude
+* __Build Reducer:__ Write a reducer program which takes the last position of the flight and calculates its distance to Beijing
+* __Create CSV List:__ From the reducer output file, produce a CSV list of all flights (ident, id, and distance to Beijing) sorted by closest to furthest to Beijing
+* __Data Analysis:__ Analyze the output file with sorted flight distances and summarize the results of the analysis
 
 ![workflow](https://github.com/Nicole-Hong/Flight_Distance_Calculation_with_MapReduce/blob/main/images/workflow.JPG)
 
 ### System Requirements
 
-This project has been developed using Python and Jupyter Notebook, which are run on a Windows system and Visual Studio Code. 
+This project has been developed using Python and Jupyter Notebook, which are run on a Windows O/S and Visual Studio Code. 
 
 ### Data Requirements
 
-The base model was developed, based on text files with 10,000 JSON objects
+The mapper program was developed, based on the input dataset in a text file with over 10,000 JSON objects. The reducer program was developed from the sorted output file from the mapper program, which was also in a text file with JSON objects.
 
 ### Distance Calculation
 
@@ -48,7 +48,13 @@ The Haversine formula was broken down to three sections and implemented into the
 
 ### Key Outputs
 
-The key outpus
+The mapper program produced the flight data in JSON objects, which were mapped and sorted by key-value pairs (__text file: 'groupassignmentdata_mapped_sorted.txt'__), which was further passed to the reducer program as its input. The reducer program produced the data in JSON objects, which were reduced with 'id', 'ident' and 'distance' calculated by the Haversine function within the reducer program (__text file: 'groupassignmentdata_reducerout.txt'__).  
+
+The final output was the CSV file with the flight data sorted by the flight distance in the ascending order, after the reducer output text file with JSON objects was transformed to a Pandas dataframe and the sorted flight list in the dataframe was exported to a CSV file.
+
+Additional data analysis was conducted in Jupyter Notebook afterwards, and our team had the following results:
+
+![summary](https://github.com/Nicole-Hong/Flight_Distance_Calculation_with_MapReduce/blob/main/images/summary.JPG)
 
 
 
