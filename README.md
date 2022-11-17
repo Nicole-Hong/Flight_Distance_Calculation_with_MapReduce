@@ -2,7 +2,7 @@
 
 # Flight Distance Calculation with MapReduce
 
-This project was completed as the Team Project at __YCBS 257 Data at Scale class__ in __Professional Development Certificate Program in Data Science and Machine Learning__ at __McGill University__, and the project introduced the MapReduce functions for solving the problems with Big Data. 
+This project was completed as the small scale team project at __YCBS 257 Data at Scale class__ in __Professional Development Certificate Program in Data Science and Machine Learning__ at __McGill University__, and the project introduced the MapReduce functions for solving the problems with Big Data. 
 
 Based on the given flight data, our team extracted the necessary data and calculated the flight distances between Beijing and data points, using MapReduce.
 
