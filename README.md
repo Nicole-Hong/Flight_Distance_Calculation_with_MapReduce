@@ -54,7 +54,7 @@ The mapper program produced the flight data in JSON objects, which were mapped a
 
 The final output was the CSV file (__CSV file: 'flight_list_sorted_by_distance.csv'__) with the flight data sorted by the flight distance in the ascending order, after the reducer output text file with JSON objects was transformed to a Pandas dataframe and the sorted flight list in the dataframe was exported to a CSV file.
 
-Additional data analysis was conducted in Jupyter Notebook afterwards, and our team had the following results:
+Additional data analysis was conducted in Jupyter Notebook (__Jupyter Notebook file: 'reducer_GA_team3.ipynb'__), and our team had the following results:
 
 ![summary](https://github.com/Nicole-Hong/Flight_Distance_Calculation_with_MapReduce/blob/main/images/summary.JPG)
 
