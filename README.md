@@ -4,18 +4,16 @@
 
 This project was completed as the Team Project at __YCBS 257 Data at Scale class__ in __Professional Development Certificate Program in Data Science and Machine Learning__ at __McGill University__, and the project introduced the MapReduce functions for solving the problems with Big Data. 
 
-Based on 
-
 ## How to use this repository
 
 This repository has the following main directories and files:
 
-##### Directories
+#### __Directories__
 * __data:__ data with JSON objects in text file
 * __output files:__ summary of Kaggle scores / leaderboard status & Kaggle submission files
 * __images:__ diagrams created for summary of processes and components
 
-##### Files
+#### __Files__
 * __mapper_GA_team3.ipynb:__ mapper program in Python
 * __reducer_GA_team3.ipynb:__ reducer program in Python
 * __Group Presentation Slides_Team3.pdf:__ the group presentation ppt slides
