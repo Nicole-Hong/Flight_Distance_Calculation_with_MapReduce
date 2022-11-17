@@ -16,9 +16,9 @@ This repository has the following main directories and files:
 * __images:__ diagrams created for summary of processes and components
 
 ##### Files
-*__mapper_GA_team3.ipynb:__ mapper program in Python
-*__reducer_GA_team3.ipynb:__ reducer program in Python
-*__Group Presentation Slides_Team3.pdf:__ the group presentation ppt slides
+* __mapper_GA_team3.ipynb:__ mapper program in Python
+* __reducer_GA_team3.ipynb:__ reducer program in Python
+* __Group Presentation Slides_Team3.pdf:__ the group presentation ppt slides
 
 ### Workflow Overview
 
