@@ -4,13 +4,15 @@
 
 This project was completed as the Team Project at __YCBS 257 Data at Scale class__ in __Professional Development Certificate Program in Data Science and Machine Learning__ at __McGill University__, and the project introduced the MapReduce functions for solving the problems with Big Data. 
 
+Based on the given flight data, our team extracted the necessary data and calculated the flight distances between Beijing and data points, using MapReduce.
+
 ## How to use this repository
 
 This repository has the following main directories and files:
 
 #### __Directories__
-* __data:__ data with JSON objects in text file
-* __output files:__ summary of Kaggle scores / leaderboard status & Kaggle submission files
+* __data:__ flight data with JSON objects in text file
+* __output files:__ outputs from the mapper and reducer programs, and from the process of creating the CSV output file
 * __images:__ diagrams created for summary of processes and components
 
 #### __Files__
@@ -37,6 +39,10 @@ This project has been developed using Python and Jupyter Notebook, which are run
 
 The mapper program was developed, based on the input dataset in a text file with over 10,000 JSON objects. The reducer program was developed from the sorted output file from the mapper program, which was also in a text file with JSON objects.
 
+The details of the input dataset were as follows:
+
+![dataset](https://github.com/Nicole-Hong/Flight_Distance_Calculation_with_MapReduce/blob/main/images/dataset.JPG)
+
 ### Distance Calculation
 
 Our team used the following Haversine formula to calculate the distances between Beijing and data points in the given dataset, which were in latitudes and longitudes:
@@ -50,7 +56,7 @@ The Haversine formula was broken down to three sections and implemented into the
 
 The mapper program produced the flight data in JSON objects, which were mapped and sorted by key-value pairs (__text file: 'groupassignmentdata_mapped_sorted.txt'__), which was further passed to the reducer program as its input. The reducer program produced the data in JSON objects, which were reduced with 'id', 'ident' and 'distance' calculated by the Haversine function within the reducer program (__text file: 'groupassignmentdata_reducerout.txt'__).  
 
-The final output was the CSV file with the flight data sorted by the flight distance in the ascending order, after the reducer output text file with JSON objects was transformed to a Pandas dataframe and the sorted flight list in the dataframe was exported to a CSV file.
+The final output was the CSV file (__CSV file: 'flight_list_sorted_by_distance.csv'__) with the flight data sorted by the flight distance in the ascending order, after the reducer output text file with JSON objects was transformed to a Pandas dataframe and the sorted flight list in the dataframe was exported to a CSV file.
 
 Additional data analysis was conducted in Jupyter Notebook afterwards, and our team had the following results:
 
