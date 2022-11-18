@@ -11,7 +11,7 @@ Based on the given flight data, our team extracted the necessary data and calcul
 This repository has the following main directories and files:
 
 #### __Directories__
-* __data:__ flight data with JSON objects in text file
+* __data:__ flight data with JSON strings
 * __output files:__ outputs from the mapper and reducer programs, and from the process of creating the CSV output file
 * __images:__ diagrams created for summary of processes and components
 
