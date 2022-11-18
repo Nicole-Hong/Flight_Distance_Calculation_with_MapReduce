@@ -16,9 +16,9 @@ This repository has the following main directories and files:
 * __images:__ diagrams created for summary of processes and components
 
 #### __Files__
-* __mapper_GA_team3.ipynb:__ mapper program in Python
-* __reducer_GA_team3.ipynb:__ reducer program in Python
-* __Group Presentation Slides_Team3.pdf:__ the group presentation ppt slides
+* __mapper.ipynb:__ mapper program in Python
+* __reducer.ipynb:__ reducer program in Python
+* __PPT Slides.pdf:__ the group presentation ppt slides
 
 ### Workflow Overview
 
@@ -50,11 +50,11 @@ The Haversine formula was broken down to three sections and implemented into the
 
 ### Key Outputs
 
-The mapper program produced the flight data in JSON objects, which were mapped and sorted by key-value pairs (__text file: 'groupassignmentdata_mapped_sorted.txt'__), which was further passed to the reducer program as its input. The reducer program produced the data in 9,747 JSON objects, which were reduced to 'id', 'ident' and 'distance' fields, where 'distance' was calculated from 'latitude' and 'longitude' data by the Haversine function within the reducer program (__text file: 'groupassignmentdata_reducerout.txt'__).  
+The mapper program produced the flight data in JSON objects, which were mapped and sorted by key-value pairs (__text file: 'sorted_mapped_flight_data.txt'__), which was further passed to the reducer program as its input. The reducer program produced the data in 9,747 JSON objects, which were reduced to 'id', 'ident' and 'distance' fields, where 'distance' was calculated from 'latitude' and 'longitude' data by the Haversine function within the reducer program (__text file: 'reduced_flight_data.txt'__).  
 
 The final output was the CSV file (__CSV file: 'flight_list_sorted_by_distance.csv'__) with the flight data sorted by the flight distance in the ascending order, after the reducer output text file with JSON objects was transformed to a Pandas dataframe and the sorted flight list in the dataframe was exported to a CSV file.
 
-Additional data analysis was conducted in Jupyter Notebook (__Jupyter Notebook file: 'reducer_GA_team3.ipynb'__), and our team had the following results:
+Additional data analysis was conducted in Jupyter Notebook (__Jupyter Notebook file: 'reducer.ipynb'__), and our team had the following results:
 
 ![summary](https://github.com/Nicole-Hong/Flight_Distance_Calculation_with_MapReduce/blob/main/images/summary.JPG)
 
