@@ -33,7 +33,7 @@ The project was completed in the following five steps:
 
 ### Data Requirements
 
-The mapper program was developed, based on the input dataset in a text file with over 10,000 JSON objects. The reducer program was developed from the sorted output file from the mapper program, which was also in a text file with JSON objects.
+The mapper program was developed, based on the input dataset in a text file with 19,404 JSON objects. The reducer program was developed from the sorted output file from the mapper program, which was also in a text file with JSON objects.
 
 The detail of the input dataset was as follows:
 
