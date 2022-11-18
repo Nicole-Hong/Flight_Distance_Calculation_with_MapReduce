@@ -33,7 +33,7 @@ The project was completed in the following five steps:
 
 ### Data Requirements
 
-The mapper program was developed, based on the input dataset in a text file with 19,404 JSON objects. The reducer program was developed from the sorted output file from the mapper program, which was also in a text file with JSON objects.
+The mapper program was developed, based on the input dataset of 19,404 JSON strings in a text file. The reducer program was developed from the sorted output file from the mapper program, which was also a text file with JSON strings.
 
 The detail of the input dataset was as follows:
 
@@ -50,7 +50,7 @@ The Haversine formula was broken down to three sections and implemented into the
 
 ### Key Outputs
 
-The mapper program produced the flight data in JSON objects, which were mapped and sorted by key-value pairs (__text file: 'sorted_mapped_flight_data.txt'__), which was further passed to the reducer program as its input. The reducer program produced the data in 9,747 JSON objects, which were reduced to 'id', 'ident' and 'distance' fields, where 'distance' was calculated from 'latitude' and 'longitude' data by the Haversine function within the reducer program (__text file: 'reduced_flight_data.txt'__).  
+The mapper program produced the flight data in JSON objects, which were mapped and sorted by key-value pairs (__text file: 'sorted_mapped_flight_data.txt'__), which was further passed to the reducer program as its input. The reducer program produced 9,747 JSON strings in a text file, which were reduced to 'id', 'ident' and 'distance' fields, where 'distance' was calculated from 'latitude' and 'longitude' data by the Haversine function within the reducer program (__text file: 'reduced_flight_data.txt'__).  
 
 The final output was the CSV file (__CSV file: 'flight_list_sorted_by_distance.csv'__) with the flight data sorted by the flight distance in the ascending order, after the reducer output text file with JSON objects was transformed to a Pandas dataframe and the sorted flight list in the dataframe was exported to a CSV file.
 
