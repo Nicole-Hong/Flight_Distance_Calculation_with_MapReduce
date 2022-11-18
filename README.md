@@ -23,13 +23,15 @@ This repository has the following main directories and files:
 ### Workflow Overview
 
 The project was completed in the following five steps:
-* __Input Dataset:__ Verify and review the input dataset (i.e. data type, format and structure before processing)
-* __Build Mapper:__ Write a mapper program which takes out all flights ids that have the position messages only, the clock, ident and latitude and longitude
-* __Build Reducer:__ Write a reducer program which takes the last position of the flight and calculates its distance to Beijing
-* __Create CSV List:__ From the reducer output file, produce a CSV list of all flights (ident, id, and distance to Beijing) sorted by closest to furthest to Beijing
-* __Data Analysis:__ Analyze the output file with sorted flight distances and summarize the results of the analysis
+  > __Step 1. Input Dataset:__ Verify and review the input dataset (i.e. data type, format and structure before processing)
+  > __Step 2. Build Mapper:__ Write a mapper program which takes out all flights ids that have the position messages only, the clock, ident and latitude and longitude
+  > __Step 3. Build Reducer:__ Write a reducer program which takes the last position of the flight and calculates its distance to Beijing
+  > __Step 4. Create CSV List:__ From the reducer output file, produce a CSV list of all flights (ident, id, and distance to Beijing) sorted by closest to furthest to Beijing
+  > __Step 5. Data Analysis:__ Analyze the output file with sorted flight distances and summarize the results of the analysis
 
-![workflow](https://github.com/Nicole-Hong/Flight_Distance_Calculation_with_MapReduce/blob/main/images/workflow.JPG)
+![mapper](https://github.com/Nicole-Hong/Flight_Distance_Calculation_with_MapReduce/blob/main/images/mapper.JPG)
+
+![reducer](https://github.com/Nicole-Hong/Flight_Distance_Calculation_with_MapReduce/blob/main/images/reducer.JPG)
 
 ### Data Requirements
 
